@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html tag的高度是自适应的</title>
+    <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        .container {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .container header {
+          height: 200px;
+          background: blue;
+        }
+
+        .container section {
+          flex: 1;
+          display: flex;
+        }
+
+        .container section aside:nth-child(1),aside:nth-child(3) {
+          width: 200px;
+          background: green;
+        }
+
+        .container section main{
+          flex: 1;
+          background: purple;
+        }
+
+        .container footer {
+          height: 150px;
+          background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <header></header>
+       <section>
+          <aside>left</aside>
+          <main>main</main>
+          <aside>right</aside>
+       </section>
+       <footer></footer> 
+    </div>
+</body>
+</html>
