@@ -1,11 +1,11 @@
-const arr = [1, 2, [3], 4]
+const arr = [1, 2, [3, [5], [7, [10]]], 4]
 
-const flatSingleArray = (arr) => {
+const flatArray = (arr) => {
   const res = [];
 
   arr.forEach(item => {
     if (Array.isArray(item)) {
-      item.forEach(children => res.push(children))
+      res.push(...flatArray(item))
     } else {
       res.push(item)
     }
