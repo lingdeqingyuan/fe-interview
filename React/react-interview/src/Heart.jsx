@@ -6,8 +6,8 @@ const Heart = () => {
       console.log('Hello')
     }, 1000)
 
-    return () => {  
-        clearInterval(id);
+    return () => {
+      clearInterval(id);
     }
   }, [])
   return (
