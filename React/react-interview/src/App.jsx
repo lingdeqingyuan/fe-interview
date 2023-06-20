@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-import Heart from './Heart'
+import Demo1 from './components/demo1'
+import Demo2 from './components/demo2'
 
 function App() {
-  const [count, setCount] = useState('React Hooks')
 
   return (
     <>
-      <input type="text" value={count} onChange={(e) => setCount(e.target.value)} />
-      <Heart/>
+      <Demo1 />
+      <Demo2 />
     </>
   )
 }
