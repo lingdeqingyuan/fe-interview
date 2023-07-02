@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .line {
+      height: 50px;
+      width: 50px;
+      background: black;
+      display: flex;
+    }
+    .line:nth-child(1) {
+      justify-content: flex-start;
+    }
+    .line:nth-child(2) {
+      justify-content: center;
+    }
+    .line:nth-child(3) {
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</body>
+</html>
